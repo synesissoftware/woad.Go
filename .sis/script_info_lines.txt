@@ -1,0 +1,2 @@
+woad.Go provides minimal ANSI terminal colour codes for Go
+Copyright (c) 2026, Matthew Wilson and Synesis Information Systems

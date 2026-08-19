@@ -1,0 +1,9 @@
+# woad.Go - News <!-- omit in toc -->
+
+
+| Date             | News Item                                                                                   |
+| ---------------- | ------------------------------------------------------------------------------------------- |
+| 20th August 2026 | Release of [**woad.Go** 0.0.1](https://github.com/synesissoftware/woad.Go/releases/tag/0.0.1) |
+
+
+<!-- ########################### end of file ########################### -->

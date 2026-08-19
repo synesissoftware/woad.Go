@@ -1,0 +1,30 @@
+// Copyright 2026 Matthew Wilson and Synesis Information Systems. All
+// rights reserved. Use of this source code is governed by a BSD-style
+// license that can be found in the LICENSE file.
+
+/*
+ * Created: 20th August 2026
+ * Updated: 20th August 2026
+ */
+
+package woad
+
+import "github.com/synesissoftware/ver2go"
+
+const (
+	VersionMajor uint16 = 0
+	VersionMinor uint16 = 0
+	VersionPatch uint16 = 1
+	VersionAB    uint16 = 0xFFFF
+	Version      uint64 = (uint64(VersionMajor) << 48) + (uint64(VersionMinor) << 32) + (uint64(VersionPatch) << 16) + (uint64(VersionAB) << 0)
+)
+
+var (
+	versionString string = ver2go.CalcVersionString(VersionMajor, VersionMinor, VersionPatch, VersionAB)
+)
+
+func VersionString() string {
+	return versionString
+}
+
+/* ///////////////////////////// end of file //////////////////////////// */
