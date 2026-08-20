@@ -1,8 +1,9 @@
 package woad_test
 
 import (
-	"github.com/stretchr/testify/require"
 	"github.com/synesissoftware/woad.Go"
+
+	"github.com/stretchr/testify/require"
 
 	"testing"
 )

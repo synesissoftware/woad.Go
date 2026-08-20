@@ -1,10 +1,10 @@
 package main
 
 import (
-	"fmt"
-
 	"github.com/synesissoftware/ver2go"
 	woad "github.com/synesissoftware/woad.Go"
+
+	"fmt"
 )
 
 func main() {
