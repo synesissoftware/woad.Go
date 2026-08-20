@@ -55,10 +55,22 @@ import "github.com/synesissoftware/woad.Go"
 
 ## Components
 
-**woad.Go** ships SGR string constants (`RESET`, `FG_*`, `BG_*`, including bright variants) and a version API. The sequences are always emitted; they do not inspect TTY state or Windows console mode. TTY/stream gating and Windows virtual-terminal opt-in are not implemented yet.
+**woad.Go** ships SGR string constants (`RESET`, `FG_*`, `BG_*`, including bright variants) and a version API (**`Version()`**, **`VersionString()`**). The sequences are always emitted; they do not inspect TTY state or Windows console mode. TTY/stream gating and Windows virtual-terminal opt-in are not implemented yet.
 
 ```Go
 fmt.Println(woad.FG_GREEN + "ok" + woad.RESET)
+```
+
+```Go
+const (
+	VersionMajor uint16 = /* ... */
+	VersionMinor uint16 = /* ... */
+	VersionPatch uint16 = /* ... */
+	VersionAB    uint16 = /* ... */
+)
+
+func Version() uint64
+func VersionString() string
 ```
 
 
