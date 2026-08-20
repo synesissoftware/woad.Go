@@ -8,7 +8,7 @@ Prints sample words using **woad** SGR foreground constants and **RESET**, mirro
 
 ## Source
 
-See [examples/colour/main.go](./examples/colour/main.go).
+See [examples/colour/main.go](./colour/main.go).
 
 
 ## Execution
@@ -18,5 +18,6 @@ go run ./examples/colour
 ```
 
 On a colour-capable terminal the words appear in the named colours, then the SGR state is reset.
+
 
 <!-- ########################### end of file ########################### -->
