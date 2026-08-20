@@ -1,6 +1,13 @@
 # woad.Go - Changes <!-- omit in toc -->
 
 
+## 0.1.1 - 20th August 2026
+
+* enforced Synesis Go import order via **gci** (**.golangci.yml**, **examples/.golangci.yml**);
+* moved example companion markdown to `examples/<name>.md` (alongside `examples/<name>/main.go`);
+* version string updated for the 0.1.1 release;
+
+
 ## 0.1.0 - 20th August 2026
 
 * added **Version()** (replacing the **Version** constant), formed by **ver2go.CombineVersion()**;

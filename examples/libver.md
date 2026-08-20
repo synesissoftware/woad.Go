@@ -8,7 +8,7 @@ Displays the **woad.Go** library version and terminates.
 
 ## Source
 
-See [examples/libver/main.go](./examples/libver/main.go).
+See [examples/libver/main.go](./libver/main.go).
 
 
 ## Execution
@@ -16,5 +16,6 @@ See [examples/libver/main.go](./examples/libver/main.go).
 ```bash
 go run ./examples/libver
 ```
+
 
 <!-- ########################### end of file ########################### -->

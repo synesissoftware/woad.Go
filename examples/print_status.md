@@ -8,7 +8,7 @@ Prints sample status words using **woad** SGR foreground constants and **RESET**
 
 ## Source
 
-See [examples/print_status/main.go](./examples/print_status/main.go).
+See [examples/print_status/main.go](./print_status/main.go).
 
 
 ## Execution
@@ -18,5 +18,6 @@ go run ./examples/print_status
 ```
 
 On a colour-capable terminal the words appear in green, yellow, and red, then the SGR state is reset.
+
 
 <!-- ########################### end of file ########################### -->
