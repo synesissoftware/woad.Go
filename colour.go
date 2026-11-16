@@ -10,10 +10,10 @@
 package woad
 
 import (
+	"golang.org/x/term"
+
 	"io"
 	"os"
-
-	"golang.org/x/term"
 )
 
 /* /////////////////////////////////////////////////////////////////////////

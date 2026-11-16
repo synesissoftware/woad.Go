@@ -10,11 +10,11 @@
 package woad_test
 
 import (
+	woad "github.com/synesissoftware/woad.Go"
+
 	"os"
 	"sync"
 	"testing"
-
-	woad "github.com/synesissoftware/woad.Go"
 )
 
 // Variables the colour policy reads. Cleared before each managed case so

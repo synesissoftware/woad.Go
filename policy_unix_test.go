@@ -12,14 +12,14 @@
 package woad_test
 
 import (
-	"os"
-	"sync"
-	"testing"
-
 	woad "github.com/synesissoftware/woad.Go"
 
 	"github.com/stretchr/testify/require"
 	"golang.org/x/term"
+
+	"os"
+	"sync"
+	"testing"
 )
 
 type endpoints struct {
