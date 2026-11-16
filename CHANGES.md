@@ -1,6 +1,14 @@
 # woad.Go - Changes <!-- omit in toc -->
 
 
+## 0.2.0-alpha1 - 17th November 2026
+
+* added `BLINKING` and `BOLD`, byte-for-byte with **woad** **0.3.0**;
+* added cached `ColourPolicy`, `Refresh`, `SupportsColour`, and `SeqFor` for the portable colour contract (Unix attachment via **golang.org/x/term**, and `TERM=dumb`; no console probe);
+* added decision rows 1-22; **examples/colour** and **examples/libver** emit sequences only when the writer supports colour;
+* left Windows virtual-terminal mode and mintty PTY recognition for a later alpha;
+
+
 ## 0.1.1 - 20th August 2026
 
 * enforced Synesis Go import order via **gci** (**.golangci.yml**, **examples/.golangci.yml**);

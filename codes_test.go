@@ -12,6 +12,8 @@ import (
 func allCodes() []string {
 	return []string{
 		woad.RESET,
+		woad.BOLD,
+		woad.BLINKING,
 		woad.FG_BLACK,
 		woad.FG_RED,
 		woad.FG_GREEN,
@@ -49,6 +51,14 @@ func allCodes() []string {
 
 func Test_RESET(t *testing.T) {
 	require.Equal(t, "\x1b[0m", woad.RESET)
+}
+
+func Test_BOLD(t *testing.T) {
+	require.Equal(t, "\x1b[1m", woad.BOLD)
+}
+
+func Test_BLINKING(t *testing.T) {
+	require.Equal(t, "\x1b[5m", woad.BLINKING)
 }
 
 func Test_FG_RED(t *testing.T) {

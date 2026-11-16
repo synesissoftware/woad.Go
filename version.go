@@ -4,7 +4,7 @@
 
 /*
  * Created: 20th August 2026
- * Updated: 20th August 2026
+ * Updated: 17th November 2026
  */
 
 package woad
@@ -13,9 +13,9 @@ import "github.com/synesissoftware/ver2go"
 
 const (
 	VersionMajor uint16 = 0
-	VersionMinor uint16 = 1
-	VersionPatch uint16 = 1
-	VersionAB    uint16 = ver2go.Release
+	VersionMinor uint16 = 2
+	VersionPatch uint16 = 0
+	VersionAB    uint16 = ver2go.Alpha1
 )
 
 var (
@@ -23,19 +23,18 @@ var (
 	versionString string = ver2go.CalcVersionString(VersionMajor, VersionMinor, VersionPatch, VersionAB)
 )
 
-// Version returns this library's version as a packed 64-bit integer, formed
-// by ver2go.CombineVersion from VersionMajor, VersionMinor, VersionPatch,
-// and VersionAB. The result is suitable for numeric comparison: a later
-// release has a strictly greater value than an earlier one that uses the
-// same packing.
+// This library's version as a packed 64-bit integer, formed by
+// ver2go.CombineVersion from VersionMajor, VersionMinor, VersionPatch,
+// and VersionAB. A later release has a strictly greater value than an
+// earlier one that uses the same packing.
 func Version() uint64 {
 	return version
 }
 
-// VersionString returns this library's version as a human-readable string,
-// formed by ver2go.CalcVersionString from VersionMajor, VersionMinor,
-// VersionPatch, and VersionAB. For a final (non-prerelease) version the
-// result is of the form "MAJOR.MINOR.PATCH", e.g. "0.1.1".
+// This library's version as a human-readable string, formed by
+// ver2go.CalcVersionString from VersionMajor, VersionMinor, VersionPatch,
+// and VersionAB. A final version has the form "MAJOR.MINOR.PATCH". A
+// prerelease appends a hyphen and the label, e.g. "0.2.0-alpha1".
 func VersionString() string {
 	return versionString
 }
